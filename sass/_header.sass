@@ -1,0 +1,117 @@
+/*====header====*/
+header
+    background-image: url(../images/header_desktop.png)
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+    height: 297px
+    padding-top: 123px
+    @include phone()
+        background-image: url(../images/header_mobile.png)
+        height: 307px
+        padding-top: 113px
+.main-menu
+    background: rgba(0, 0, 0, 0.75)
+    width: auto
+    height: 56px
+    display: flex
+    align-items: center
+    z-index: 99
+    position: fixed
+    top: 0px
+    right: 0
+    left: 0
+    transition: all 0.5s
+    &:hover
+        background: rgba(0, 0, 0, 1)
+    @include phone()
+        height: 44px
+    .logo
+        display: inline-block
+        width: 120px
+        height: 24px
+        background-image: url(../images/logo_w@svg.svg)
+        background-size: cover
+        @include hide-text
+        @include phone()
+            width: 94px
+nav
+    display: inline-flex
+    line-height: 24px
+    position: absolute
+    justify-content: space-around
+    right: 0
+    .hamburger
+        font-size: 24px
+        line-height: 44px
+        width: 44px
+        text-align: right
+        color: #FFFFFF
+        margin-right: 13px
+    ul li
+        display: inline-block
+        margin: 0
+        transition: all 0.5s
+        &:hover>a
+            color: rgb(0, 255, 177)
+        a
+            font-size: $font-size-normal
+            color: $color-white
+            margin: 0 15px
+            font-weight: 100
+            transition: all 0.5s
+#register
+    margin-right: 42px
+.menu-hamburger
+    display: none
+    position: fixed
+    top: 44px
+    width: 100%
+    height: auto
+    overflow: hidden
+    background: rgba(0, 0, 0, 0.75)
+    z-index: 99
+    >ul li
+        display: block
+        a
+            font-size: $font-size-normal
+            color: $color-white
+            display: block
+            margin: 0
+            font-weight: 100
+            height: 44px
+            line-height: 44px
+            text-align: center
+            transition: all 0.5s
+            &:hover
+                background: rgba(0, 0, 0, 1)
+    .menu-show
+        display: block 
+.hamburger:hover>.menu-hamburger
+    display: none
+.topic
+    display: block
+    width: 460px
+    height: 152px
+    background: rgba(0, 0, 0, 0.35)
+    margin: 0 auto
+    color: $color-white
+    text-align: center
+    @include phone()
+        width: 300px
+        height: 194px
+    h1
+        display: block
+        font-size: 2.250em
+        font-weight: 300
+        padding: 20px 0 16px 0
+        letter-spacing: 0.1em
+        @include phone()
+            letter-spacing: 0.03em
+            line-height: 1.2em
+    p
+        font-size: $font-size-normal
+        font-weight: 100
+        line-height: 1.5em
+        @include phone()
+            margin-top: -25px

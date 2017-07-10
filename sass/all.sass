@@ -1,0 +1,18 @@
+@import 'mixin'
+@import 'layout'
+@import 'header'
+@import 'main'
+@import 'footer'
+@import 'login'
+@import 'register'
+@import 'shop'
+
+/*== 手機顯示設定 ==*/
+.pc
+    display: block!important
+    @include phone()
+        display: none!important
+.ph 
+    display: none!important
+    @include phone()
+        display: block!important

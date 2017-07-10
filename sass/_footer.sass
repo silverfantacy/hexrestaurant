@@ -1,0 +1,50 @@
+/*====footer====*/
+footer
+    .content 
+        padding: 50px 0
+        position: relative
+        display: flex
+        line-height: 1.3em
+        @include pad()
+            display: block
+    h3 
+        font-size: 24px
+        margin-bottom: 1em
+.about, .connect,.sociallink 
+    flex: 1
+    display: block
+    @include pad()
+        flex: 0
+        margin-bottom: 30px
+.about 
+    text-align: left
+    line-height: 1.3em
+    letter-spacing: 0em
+    margin-right: 20px
+.connect ul 
+    list-style-type: none
+    list-style-position: inside
+
+.sociallink 
+    font-size: 36px
+    @include pad()
+        margin-bottom: 0
+    >.logo-img 
+        display: block
+        height: 49px
+        background-image: url(../images/logo_l@svg.svg)
+        background-repeat: no-repeat
+        background-size: contain
+        background-position: right!important
+        margin-bottom: 22px
+    ul 
+        display: flex
+        justify-content: flex-end
+        li
+            margin-left: 12px
+            .fa-google-plus-square 
+                color: $color-google-plus
+            .fa-twitter-square 
+                color: $color-twitter
+            .fa-facebook-square 
+                color: $color-facebook

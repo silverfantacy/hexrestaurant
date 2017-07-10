@@ -1,0 +1,31 @@
+/*====layout====*/
+$color-brown: #3D1101
+$color-white: #FFFFFF
+$color-white-E: #EFE9E7
+$color-gray: #4A4A4A
+$color-orange: #F56C23
+$color-google-plus: #DB4437
+$color-twitter: #41ABE1
+$color-facebook: #3A5795
+$font-MSJH: MicrosoftJhengHeiRegular
+$font-size-normal: 1em
+
+
+
+html
+    font-family: $font-MSJH
+    @include text-justify
+    letter-spacing: 0.1em
+    background-color: #333
+    .wrap
+        max-width: 1024px
+        margin: 0 auto
+        background-color: #efe9e7
+        color: $color-brown
+.container
+    max-width: 940px
+    padding: 0 42px
+    margin: 0 auto
+    position: relative
+    @include pad()
+        padding: 0 13px

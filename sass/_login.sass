@@ -1,0 +1,70 @@
+/*====login====*/
+main
+    >.content
+        .logo-img 
+            display: block
+            height: 48px
+            background-image: url(../images/logo_l@svg.svg)
+            background-repeat: no-repeat
+            background-size: contain
+            background-position: center
+            margin-bottom: 5px
+        >h2 
+            font-size: 20px
+            color: $color-brown
+            font-family: 'Noto Sans TC', 'Microsoft JhengHei', sans-serif
+            font-weight: 600
+            text-align: center
+            margin-bottom: 35px
+.loginbox 
+    display: block
+    max-width: 270px
+    margin: 0 auto
+    background: $color-white-E
+    box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.16)
+    border-top: 3px solid #FF5E45
+    padding: 15px
+    position: relative
+    >h3 
+        font-family: 'Noto Sans TC', 'Microsoft JhengHei', sans-serif
+        font-weight: 900
+        font-size: 18px
+        color: $color-brown
+        text-align: center
+        margin-bottom: 1em
+        letter-spacing: 0em
+.pure-form 
+    letter-spacing: 0em
+    #account,#password 
+        height: 32px
+        padding-left: 30px
+        background-repeat: no-repeat
+    #account 
+        background-image: url(../images/mail.svg)
+        margin-bottom: 15px
+    #password 
+        background-image: url(../images/lock.svg)
+    #prompt 
+        display: block
+        font-size: 14px
+        color: #FF5E45
+        margin-bottom: 30px
+.login-button 
+    display: flex
+    justify-content: space-between
+.send,.login 
+    display: block
+    width: 125px
+    height: 32px
+    border-radius: 3px
+    border: none
+    font-size: 14px
+    color: $color-white
+    letter-spacing: 0.1em
+    transition: all 0.5s
+    &:hover
+        box-shadow: 1px 1px 12px 1px rgba(245, 108, 35, 0.6)
+.send 
+    background: rgba(0, 0, 0, 0.35)
+.login 
+    background: #F56C23

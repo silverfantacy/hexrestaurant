@@ -1,0 +1,55 @@
+/*====register====*/
+.registerbox 
+    display: block
+    max-width: 590px
+    margin: 0 auto
+    background: $color-white-E
+    box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.16)
+    border-top: 3px solid #FF5E45
+    padding: 15px
+    position: relative
+    h3 
+        font-family: 'Noto Sans TC', 'Microsoft JhengHei', sans-serif
+        font-weight: 900
+        font-size: 18px
+        color: $color-brown
+        text-align: center
+        margin-bottom: 1em
+        letter-spacing: 0em
+.registerboxFlex 
+    display: flex
+    justify-content: space-between
+    @include phone
+        display: block
+        justify-content: none
+    p 
+        flex: 1
+        max-width: 285px
+        text-align: left
+        font-size: 16px
+        color: $color-brown
+        line-height: 1.4em
+        @include phone
+            max-width: 100%
+            margin-bottom: 15px
+        span 
+            display: block
+            letter-spacing: 0em
+#registerForm 
+    flex: 1
+    letter-spacing: 0em
+    max-width: 285px
+    @include phone
+        display: block
+        max-width: 100%
+#account,#password,#password-re 
+    height: 32px
+#password-re 
+    background-image: url(../images/lock.svg)
+    background-repeat: no-repeat
+    padding-left: 30px
+.register-button 
+    display: flex
+    justify-content: flex-end
+.send 
+    background: $color-orange
